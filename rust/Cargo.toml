@@ -38,27 +38,21 @@ opt-level = 3
 
 [workspace.dependencies]
 # path dependencies
+board-game = { version = "0.8.0", path = "../../board-game-rs" }
+cuda-nn-eval = { path = "cuda-nn-eval" }
+cuda-sys = { path = "cuda-sys" }
 kz-core = { path = "kz-core" }
 kz-selfplay = { path = "kz-selfplay" }
 kz-util = { path = "kz-util" }
 licorice = { path = "licorice" }
 pgn-reader = { path = "pgn-reader" }
 
-# Kyanite subcrates
-kn-graph = "0.4.0"
-kn-cuda-sys = "0.4.0"
-kn-cuda-eval = "0.4.0"
-#kn-graph = { path = "../../Kyanite/kn-graph" }
-#kn-cuda-sys = { path = "../../Kyanite/kn-cuda-sys" }
-#kn-cuda-eval = { path = "../../Kyanite/kn-cuda-eval" }
-
-# crates.io depedencies
-anyhow = "1.0.75"
-async-trait = "0.1.73"
-bindgen = "0.68.1"
-board-game = "0.8.2"
-buffered-reader = "1.2.0"
-bytemuck = "1.14.0"
+# crates.io dependencies
+anyhow = "1.0.70"
+async-trait = "0.1.68"
+bindgen = "0.64.0"
+buffered-reader = "1.1.4"
+bytemuck = "1.13.1"
 byteorder = "1.4.3"
 bytes = "1.5.0"
 bzip2 = "0.4.4"
